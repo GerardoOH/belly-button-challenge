@@ -19,7 +19,7 @@ function buildMetadata(sample) {
     Object.entries(result).forEach(([key, value]) => {
       panel.append("h6").text(`${key.toUpperCase()}: ${value}`);
     });
-  }); // <-- Added this closing parenthesis and semicolon
+  });
 }
 
 // function to build both charts
@@ -78,7 +78,7 @@ function buildCharts(sample) {
 
     // Render the Bar Chart
     Plotly.newPlot("bar", barData, barLayout);
-  }); // <-- Added this closing parenthesis and semicolon
+  }); //
 }
 
 // Function to run on page load
@@ -104,7 +104,7 @@ function init() {
     // Build charts and metadata panel with the first sample
     buildCharts(firstSample);
     buildMetadata(firstSample);
-  }); // <-- Added this closing parenthesis and semicolon
+  }); //
 }
 
 // Function for event listener
